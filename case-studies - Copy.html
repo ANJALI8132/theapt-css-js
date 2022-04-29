@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>APT Digital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="images/favicon.ico">
+	<link href="css/pace-inner.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/linea-arrows.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="revolution/css/settings.css" />
+    <link rel="stylesheet" href="css/rev-slider.css" />
+
+    <link href="css/panelmenu.css" rel="stylesheet">
+	
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+
+</head>
+
+<body>
+
+    <div class="body_wraper">
+<?php 
+
+include 'header.php'?>
+
+<section>
+<div class="inner_bannersec" style="background:url(images/bg4.jpg) no-repeat center; background-size:cover">
+<div class="container">
+    <div class="row inr_bnr_align">
+        <div class="col-lg-6">
+<div class="inner_bnr_title">
+<h3>Clients who chose us to grow their business</h3>
+</div>
+        </div>
+    </div>  
+</div>
+</div>
+</section>
+
+<section>
+<div class="case_studiespage">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="iner_comentitle wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+<h3>Our Latest Case Studies</h3>
+</div>
+</div>
+<div class="col-12">
+<div class="logo_outer">
+<ul class="client_logo_ul">
+<li >
+<figure><img src="images/client/1.jpg" alt="">
+</figure>
+</li>
+
+<li >
+<figure><img src="images/client/2.png" alt="">
+</figure>
+</li>
+
+<li >
+<figure><img src="images/client/3.png" alt="">
+</figure>
+</li>
+
+<li >
+<figure><img src="images/client/4.png" alt="">
+</figure>
+</li>
+
+<li >
+<figure><img src="images/client/5.png" alt="">
+</figure>
+</li>
+
+<li >
+<figure><img src="images/client/6.png" alt="">
+</figure>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<?php include 'ready-to-grow.php'?>
+<?php include 'certified.php'?>
+
+<?php 
+
+include 'footer.php'?>
+
+ </div> <!-- bodywrapper -->
+
+
+    
+
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/stickynew.js"></script>
+	
+	<script src="js/pace.min-inner.js"></script>
+    <script src="js/loader.js"></script>
+
+    <script src="js/panelmenu.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/slick.min.js"></script>
+    <script src="js/slick-custom.js"></script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        wow = new WOW(
+            {
+                animateClass: 'animated',
+                offset: 100,
+                callback: function (box) {
+                    console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                }
+            }
+        );
+        wow.init();
+        document.getElementById('moar').onclick = function () {
+            var section = document.createElement('section');
+            section.className = 'section--purple wow fadeInDown';
+            this.parentNode.insertBefore(section, this);
+        };
+    </script>
+
+    <script src="js/totop.js"></script>
+    <script>
+        $('.totop').tottTop({
+            scrollTop: 100
+        });
+    </script>
+
+</body>
+
+</html>
